@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: rubbik, poppins, sans-serif;
+}
+
+
+.App{
+  width: 100vw;
+  min-height: 100vh;
+  background: #ced8ff;
+  display: grid;
+  transition: 0.5s;
+}
+
+.App.dark{
+  background: #222;
+  color: #fff;
+}
+
+.Routes{
+  flex: 1;
+}

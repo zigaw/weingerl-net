@@ -1,0 +1,73 @@
+
+.contacts{
+    transition: 0.5s;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+}
+
+.business-card {
+    width: 60%;
+    margin: 20px auto;
+    justify-content: space-between;
+    border-radius: 50px; /* Increase the border-radius */
+    background-color: #222; /* Change the background color */
+}
+
+.dark .business-card {
+    background-color: #ced8ff; /* Change the background color */
+}
+
+.h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.form-input {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 50px;
+    border-color: transparent;
+}
+
+.form-input-textarea {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 20px;
+    border-color: transparent;
+    height: 200px;
+
+}
+
+.form-submit {
+    background-color: #000;
+    font-weight: bolder;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-color: transparent;
+}
+
+.dark .form-submit {
+    background-color: #8ea5fa;
+    color: black;
+}
