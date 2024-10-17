@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./components/HomePage/HomePage";
+import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Contacts from "./components/Contact/Contacts";
 import Footer from "./components/Footer/Footer";
@@ -21,6 +22,7 @@ function App() {
                 <Navbar theme={theme} setTheme={setTheme}/>
                 <Routes>
                     <Route path="/" element={<HomePage theme={theme}/>}/>
+                    <Route path="/experience" element={<Experience/>}/>
                     <Route path="/projects" element={<Projects/>}/>
                     <Route path="/contact" element={<Contacts/>}/>
                     <Route path="*" element={<HomePage theme={theme}/>}/>
