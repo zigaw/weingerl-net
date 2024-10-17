@@ -1,5 +1,5 @@
 .navbar {
-    height: 60px;
+    height: 17vh;
     width: 100%;
     background: #fff;
     color: black;
@@ -11,8 +11,9 @@
 }
 
 .logo{
-    width: 50px;
-    cursor: pointer;
+    width: 8rem;
+    cursor: default;
+    transition: 0.5s;
 }
 
 ul{
@@ -25,7 +26,7 @@ ul li{
     display: inline-block;
     margin: 0 20px;
     height: auto;
-    font-size: 18px;
+    font-size: 1.5rem;
     cursor: pointer;
     color: inherit;
 }
@@ -76,7 +77,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ced8ff;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
 }
 
 .dark nav a:hover {

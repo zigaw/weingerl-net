@@ -16,6 +16,10 @@ function Navbar({theme, setTheme}) {
         theme === 'light' ? setTheme('dark') : setTheme('light');
     }
 
+    const closeSidebar = () => {
+        document.getElementById("sidebar-active").checked = false;
+    };
+
     return (
         <nav className="navbar">
             <input type="checkbox" id={"sidebar-active"}/>
@@ -30,13 +34,13 @@ function Navbar({theme, setTheme}) {
 
                     <ul>
                         <li>
-                            <Link to={"/"}>About</Link>
+                            <Link to={"/"} onClick={closeSidebar}>About</Link>
                         </li>
                         <li>
-                            <Link to="/projects">Projects</Link>
+                            <Link to={"/projects"} onClick={closeSidebar}>Projects</Link>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link to={"/contact"} onClick={closeSidebar}>Contact</Link>
                         </li>
                     </ul>
                 </div>

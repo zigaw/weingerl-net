@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import HomePage from "./components/HomePage";
-import Projects from "./components/Projects";
+import HomePage from "./components/HomePage/HomePage";
+import Projects from "./components/Projects/Projects";
 import Contacts from "./components/Contact/Contacts";
 import Footer from "./components/Footer/Footer";
 import {useState,useEffect} from "react";
@@ -20,9 +20,10 @@ function App() {
             <div className={`App ${theme}`}>
                 <Navbar theme={theme} setTheme={setTheme}/>
                 <Routes>
-                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/" element={<HomePage theme={theme}/>}/>
                     <Route path="/projects" element={<Projects/>}/>
                     <Route path="/contact" element={<Contacts/>}/>
+                    <Route path="*" element={<HomePage theme={theme}/>}/>
                 </Routes>
                 <Footer theme={theme}/>
             </div>
