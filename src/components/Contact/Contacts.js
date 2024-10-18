@@ -28,18 +28,21 @@ function Contacts() {
     };
 
     return (
+        <section id={"contact"}>
         <div className={"contacts"}>
+            <p className={"section__text__p1"}>Get In Touch</p>
+            <h1 className={"title"}>Contact Me</h1>
             <div className={"business-card"}>
                 <SplineViewer/>
             </div>
             <form className="contact-form" onSubmit={handleSubmit}>
-                <h2>Contact Me</h2>
                 <input className={"form-input"} type="email" placeholder="Your Email" required value={email} onChange={(e) => setEmail(e.target.value)} />
                 <input className={"form-input"} type="text" placeholder="Subject" required value={subject} onChange={(e) => setSubject(e.target.value)} />
                 <textarea className={"form-input-textarea"} placeholder="Your Message" required value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                 <button className={"form-submit"} type="submit">Send</button>
             </form>
         </div>
+        </section>
     );
 }
 

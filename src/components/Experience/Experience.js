@@ -1,5 +1,4 @@
 import React from "react";
-import "./Experience.css";
 import {Link} from "react-router-dom";
 import checkmark_light from "../../assets/checkmark-light.png";
 import checkmark_dark from "../../assets/checkmark-dark.png";

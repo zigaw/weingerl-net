@@ -1,5 +1,4 @@
 import React from "react";
-import "./AboutMe.css";
 import {Link} from "react-router-dom";
 import about from "../../assets/about-pfp.png";
 import experience_light from "../../assets/experience-light.png";
