@@ -1,7 +1,21 @@
+:root{
+    --navbar-background: white;
+
+    --dark-navbar-background: black;
+    --dark-navbar-color: white;
+    --dark-navbar-hover: #222;
+
+    --mobile-nav-background: #ced8ff;
+    --movile-nav-hover: white;
+
+    --mobile-nav-dark-background: black;
+    --mobile-nav-dark-hover: #222;
+}
+
 .navbar {
     height: 17vh;
     width: 100%;
-    background: #fff;
+    background: var(--navbar-background);
     color: black;
     display: flex;
     justify-content: flex-end;
@@ -32,13 +46,13 @@ ul li{
 }
 
 .dark .navbar{
-    background: #000;
-    color: #fff;
+    background: var(--dark-navbar-background);
+    color: var(--dark-navbar-color);
 }
 
 .dark .links-container{
-    background: #000;
-    color: #fff;
+    background: var(--dark-navbar-background);
+    color: var(--dark-navbar-color);
 }
 
 
@@ -82,7 +96,7 @@ nav a:hover {
 }
 
 .dark nav a:hover {
-    background-color: #222;
+    background-color: var(--dark-navbar-hover);
 }
 
 
@@ -119,7 +133,7 @@ nav .logo-container:hover{
         right: -100%;
         z-index: 10;
         width: 300px;
-        background-color: #ced8ff;
+        background-color: var(--mobile-nav-background);
         transition: 0.75s ease-out;
     }
 
@@ -133,11 +147,11 @@ nav .logo-container:hover{
     }
 
     li:hover{
-        background-color: #fff;
+        background-color: var(--movile-nav-hover);
     }
 
     .dark li:hover{
-        background-color: #222;
+        background-color: var(--mobile-nav-dark-hover);
     }
 
     ul, li{
@@ -146,11 +160,11 @@ nav .logo-container:hover{
     }
 
     .links-container li a:hover {
-        background-color: #fff;
+        background-color: var(--movile-nav-hover);
     }
 
     .dark .links-container li a:hover{
-        background-color: #222;
+        background-color: var(--mobile-nav-dark-hover);
     }
 
     nav a {

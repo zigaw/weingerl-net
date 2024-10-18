@@ -37,7 +37,7 @@ function Navbar({theme, setTheme}) {
                             <Link to={"/"} onClick={closeSidebar}>About</Link>
                         </li>
                         <li>
-                            <Link to={"/Experience"} onClick={closeSidebar}>Experience</Link>
+                            <Link to={"/experience"} onClick={closeSidebar}>Experience</Link>
                         </li>
                         <li>
                             <Link to={"/projects"} onClick={closeSidebar}>Projects</Link>

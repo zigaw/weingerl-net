@@ -45,9 +45,9 @@ function HomePage({theme}) {
                     </div>
                 </div>
             </section>
-            <AboutMe/>
-            <Experience/>
-            <Projects/>
+            <AboutMe theme={theme}/>
+            <Experience theme={theme}/>
+            <Projects theme={theme}/>
             <Contacts/>
         </>
     );

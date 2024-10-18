@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color: #fff;
+    background-color: var(--seventh-light-color);
     padding: 20px;
     text-align: center;
     display: flex;
@@ -49,8 +49,8 @@
 }
 
 .contact-button {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--third-light-color);
+    color: var(--fifth-light-color);
     padding: 10px 20px;
     border-radius: 50px;
     text-decoration: none;
@@ -69,12 +69,12 @@
 
 .info a {
     text-decoration: none;
-    color: #222;
+    color: var(--secondary-light-color);
     margin: 5px 0;
 }
 
 .dark .info a {
-    color: #fff;
+    color: var(--third-dark-color);
 }
 
 .info h4, .social-media h4 {
@@ -85,7 +85,7 @@
 .email-link {
     font-size: 20px;
     font-weight: bold;
-    color: #000;
+    color: var(--third-light-color);
     text-decoration: none;
 }
 
@@ -112,17 +112,17 @@
 /* Copyright Section */
 .copyright {
     font-size: 14px;
-    color: #999;
+    color: var(--sixth-light-color);
     margin-top: 20px;
 }
 
 .dark .footer {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--fifth-dark-color);
+    color: var(--third-dark-color);
 }
 
 .dark .contact-button {
-    background-color: #8ea5fa;
+    background-color: var(--secondary-dark-color);
     color: black;
 }
 
