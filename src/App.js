@@ -22,8 +22,8 @@ function App() {
                 <Navbar theme={theme} setTheme={setTheme}/>
                 <Routes>
                     <Route path="/" element={<HomePage theme={theme}/>}/>
-                    <Route path="/experience" element={<Experience/>}/>
-                    <Route path="/projects" element={<Projects/>}/>
+                    <Route path="/experience" element={<Experience theme={theme}/>}/>
+                    <Route path="/projects" element={<Projects theme={theme}/>}/>
                     <Route path="/contact" element={<Contacts/>}/>
                     <Route path="*" element={<HomePage theme={theme}/>}/>
                 </Routes>

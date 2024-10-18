@@ -1,10 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import checkmark_light from "../../assets/checkmark-light.png";
-import checkmark_dark from "../../assets/checkmark-dark.png";
 import arrow_light from "../../assets/arrow-down-light.png";
+import arrow_dark from "../../assets/arrow-down-dark.png";
 
-function Experience() {
+function Experience({theme}) {
     return (
         <section id={"experience"}>
             <p className={"section__text__p1"}>Check Out My</p>
@@ -96,7 +96,7 @@ function Experience() {
             </div>
 
             <Link to={"/#projects"}>
-                <img src={arrow_light} alt={"Arrow icon"} className={"icon arrow"}/>
+                <img src={theme === 'light' ? arrow_light : arrow_dark} alt={"Arrow icon"} className={"icon arrow"}/>
             </Link>
         </section>
     )

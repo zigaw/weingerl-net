@@ -11,6 +11,8 @@ import linkedin_dark from "../../assets/linkedin-dark.png";
 import github_dark from "../../assets/github-dark.png";
 import insta_dark from "../../assets/instagram-icon-dark.png";
 import profile_pic from "../../assets/profile-pic.png"
+import arrow_light from "../../assets/arrow-down-light.png";
+import arrow_dark from "../../assets/arrow-down-dark.png";
 
 function HomePage({theme}) {
     return (

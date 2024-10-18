@@ -73,6 +73,7 @@ section {
 }
 
 .section__text__p2 {
+  color: rgb(85, 85, 85);
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }

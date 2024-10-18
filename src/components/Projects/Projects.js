@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import project1 from "../../assets/project-1.png";
 import arrow_light from "../../assets/arrow-down-light.png";
 import arrow_dark from "../../assets/arrow-down-dark.png";
-function Projects() {
+function Projects({theme}) {
     return (
         <section id={"projects"}>
             <p className={"section__text__p1"}>View My</p>
@@ -55,7 +55,7 @@ function Projects() {
                 </div>
             </div>
             <Link to={"/#contact"}>
-                <img src={arrow_light} alt={"Arrow icon"} className={"icon arrow"}/>
+                <img src={theme === 'light' ? arrow_light : arrow_dark} alt={"Arrow icon"} alt={"Arrow icon"} className={"icon arrow"}/>
             </Link>
         </section>
     );
