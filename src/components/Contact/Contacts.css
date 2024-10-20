@@ -9,9 +9,11 @@
 }
 
 .contact-form input, .contact-form textarea {
-    width: 100%;
+    width: 100% !important;
     margin: 10px 0;
     padding: 10px;
+    color: inherit;
+    border-color: var(--seventh-light-color) soilid;
 }
 
 .contact-form button {
@@ -22,7 +24,7 @@
     width: 60%;
     margin: 20px auto;
     justify-content: space-between;
-    border-radius: 50px; /* Increase the border-radius */
+    border-radius: 2rem; /* Increase the border-radius */
     background-color: var(--secondary-light-color); /* Change the background color */
 }
 
@@ -41,7 +43,7 @@
     margin: 20px auto;
     padding: 10px;
     justify-content: space-between;
-    border-radius: 50px;
+    border-radius: 2rem;
     border-color: transparent;
 }
 
@@ -50,9 +52,10 @@
     margin: 20px auto;
     padding: 10px;
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 2rem;
     border-color: transparent;
     height: 200px;
+    resize: none;
 
 }
 

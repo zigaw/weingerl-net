@@ -8,6 +8,7 @@ import education_dark from "../../assets/education-dark.png";
 import arrow_light from "../../assets/arrow-down-light.png";
 import arrow_dark from "../../assets/arrow-down-dark.png";
 function AboutMe({theme}) {
+
     return (
         <section id={"about"}>
             <p className={"section__text__p1"}>Get To Know More</p>
@@ -43,9 +44,7 @@ function AboutMe({theme}) {
                     </div>
                 </div>
             </div>
-            <Link to={"/#experience"}>
-                <img src={theme === 'light' ? arrow_light : arrow_dark} alt={"Arrow icon"} alt={"Arrow icon"} className={"icon arrow"}/>
-            </Link>
+                <img src={theme === 'light' ? arrow_light : arrow_dark} alt={"Arrow icon"} alt={"Arrow icon"} className={"icon arrow"} />
         </section>
     );
 }

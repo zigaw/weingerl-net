@@ -94,10 +94,7 @@ function Experience({theme}) {
 
                 </div>
             </div>
-
-            <Link to={"/#projects"}>
                 <img src={theme === 'light' ? arrow_light : arrow_dark} alt={"Arrow icon"} className={"icon arrow"}/>
-            </Link>
         </section>
     )
 }

@@ -116,6 +116,10 @@
     margin-top: 20px;
 }
 
+.dark .copyright {
+    color: var(--sixth-dark-color);
+}
+
 .dark .footer {
     background-color: var(--fifth-dark-color);
     color: var(--third-dark-color);

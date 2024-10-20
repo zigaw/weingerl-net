@@ -5,8 +5,8 @@
     --dark-navbar-color: white;
     --dark-navbar-hover: #222;
 
-    --mobile-nav-background: #ced8ff;
-    --movile-nav-hover: white;
+    --mobile-nav-background: white;
+    --movile-nav-hover: var(--seventh-light-color);
 
     --mobile-nav-dark-background: black;
     --mobile-nav-dark-hover: #222;

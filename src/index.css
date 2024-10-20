@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root{
-    --primary-light-color: #ced8ff;
+    --primary-light-color: white;
     --secondary-light-color: #222;
     --third-light-color: black;
     --fourth-light-color: rgb(85, 85, 85);
@@ -10,10 +10,11 @@
     --sixth-light-color: rgb(53,53,53);
     --seventh-light-color: rgb(163,163,163);
     --primary-dark-color: #222;
-    --secondary-dark-color: #ced8ff;
+    --secondary-dark-color: white;
     --third-dark-color: white;
     --fourth-dark-color: rgb(53,53,53);
     --fifth-dark-color: black;
+    --sixth-dark-color: rgb(163, 163, 163);
 
 }
 
