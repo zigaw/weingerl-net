@@ -61,6 +61,18 @@
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .contact-mail-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-mail-title {
+        font-size: 2rem;
+    }
+}
+
 .form-input-textarea {
     width: 100%;
     margin: 20px auto;

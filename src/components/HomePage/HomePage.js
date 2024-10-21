@@ -13,6 +13,7 @@ import insta_dark from "../../assets/instagram-icon-dark.png";
 import profile_pic from "../../assets/profile-pic.png"
 import arrow_light from "../../assets/arrow-down-light.png";
 import arrow_dark from "../../assets/arrow-down-dark.png";
+import my_cv from "../../assets/ziga-weingerl-cv.pdf";
 
 function HomePage({theme}) {
     const [showImage, setShowImage] = useState(true);
@@ -30,7 +31,9 @@ function HomePage({theme}) {
                 <h1 className={"title"}>Žiga Weingerl</h1>
                 <p className={"section__text__p2"}>Full Stack Developer</p>
                 <div className={"btn-container"}>
-                    <button className={"btn btn-color-2"}>Download CV</button>
+                    <a href={my_cv} target="_blank" rel="noopener noreferrer">
+                        <button className={"btn btn-color-2"}>Download CV</button>
+                    </a>
                     <Link to={"/contact"}>
                         <button className={"btn btn-color-1"}>Contact me</button>
                     </Link>
