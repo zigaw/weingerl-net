@@ -40,7 +40,7 @@ function Footer({theme}) {
             <div className="social-media">
                 <h4>Socials</h4>
                 <div className="social-media-links">
-                    <Link to="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://www.linkedin.com/in/ziga-weingerl-219778334/" target="_blank" rel="noopener noreferrer">
                         <img src={theme === 'light' ? linkedin_light : linkedin_dark} alt="linkedin" className="icon"/>
                     </Link>
                     <Link to="https://github.com/zigaw" target="_blank" rel="noopener noreferrer">

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import {Link} from "react-router-dom";
 import AboutMe from "../AboutMe/AboutMe";
 import Experience from "../Experience/Experience";
@@ -16,6 +16,9 @@ import arrow_dark from "../../assets/arrow-down-dark.png";
 
 function HomePage({theme}) {
     const [showImage, setShowImage] = useState(true);
+    const experienceRef = useRef(null);
+    const projectsRef = useRef(null);
+    const contactsRef = useRef(null);
     return (
         <>
         <section id={"profile"}>
@@ -33,7 +36,7 @@ function HomePage({theme}) {
                     </Link>
                 </div>
                 <div id={"socials-container"}>
-                    <Link to="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://www.linkedin.com/in/ziga-weingerl-219778334/" target="_blank" rel="noopener noreferrer">
                         <img src={theme === 'light' ? linkedin_light : linkedin_dark} alt="linkedin"
                              className="icon"/>
                     </Link>
@@ -46,10 +49,10 @@ function HomePage({theme}) {
                 </div>
             </div>
         </section>
-    <AboutMe theme={theme} showImage={showImage}/>
-    <Experience theme={theme} showImage={showImage}/>
-    <Projects theme={theme} showImage={showImage}/>
-    <Contacts/>
+            <AboutMe theme={theme} showImage={showImage} experienceRef={experienceRef} />
+            <Experience theme={theme} showImage={showImage} experienceRef={experienceRef} projectsRef={projectsRef}/>
+            <Projects theme={theme} showImage={showImage} projectsRef={projectsRef} contactsRef={contactsRef}/>
+            <Contacts contactsRef={contactsRef}/>
 </>
 )
     ;

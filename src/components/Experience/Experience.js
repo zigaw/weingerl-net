@@ -4,9 +4,14 @@ import checkmark_light from "../../assets/checkmark-light.png";
 import arrow_light from "../../assets/arrow-down-light.png";
 import arrow_dark from "../../assets/arrow-down-dark.png";
 
-function Experience({theme, showImage}) {
+function Experience({ theme, showImage, experienceRef, projectsRef }) {
+    const scrollToProjects = () => {
+        if (projectsRef.current) {
+            projectsRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
-        <section id={"experience"}>
+        <section id={"experience"} ref={experienceRef}>
             <p className={"section__text__p1"}>Check Out My</p>
             <h1 className={"title"}>Experience</h1>
             <div className={"experience-details-ontainer"}>
@@ -253,8 +258,14 @@ function Experience({theme, showImage}) {
                 </div>
             </div>
             {showImage && (
-                <img src={theme === 'light' ? arrow_light : arrow_dark} alt={"Arrow icon"} className={"icon arrow"} />
-            )}        </section>
+                <img
+                    src={theme === 'light' ? arrow_light : arrow_dark}
+                    alt={"Arrow icon"}
+                    className={"icon arrow"}
+                    onClick={scrollToProjects}
+                />
+            )}
+        </section>
     )
 }
 

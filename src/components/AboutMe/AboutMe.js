@@ -8,8 +8,12 @@ import education_dark from "../../assets/education-dark.png";
 import arrow_light from "../../assets/arrow-down-light.png";
 import arrow_dark from "../../assets/arrow-down-dark.png";
 
-function AboutMe({theme, showImage}) {
-
+function AboutMe({ theme, showImage, experienceRef }) {
+    const scrollToExperience = () => {
+        if (experienceRef.current) {
+            experienceRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <section id={"about"}>
             <p className={"section__text__p1"}>Get To Know More</p>
@@ -45,7 +49,12 @@ function AboutMe({theme, showImage}) {
                 </div>
             </div>
             {showImage && (
-                <img src={theme === 'light' ? arrow_light : arrow_dark} alt={"Arrow icon"} className={"icon arrow"} />
+                <img
+                    src={theme === 'light' ? arrow_light : arrow_dark}
+                    alt={"Arrow icon"}
+                    className={"icon arrow"}
+                    onClick={scrollToExperience}
+                />
             )}
         </section>
     );
