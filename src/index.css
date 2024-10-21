@@ -224,6 +224,10 @@ section {
   margin: auto;
 }
 
+.text-container{
+  text-align: justify;
+}
+
 
 #experience{
   position: relative;
@@ -254,7 +258,7 @@ section {
 article{
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 0.5rem;
 }
 
@@ -286,4 +290,3 @@ article .icon{
   color: var(--fourth-light-color);
   border-color: var(--seventh-light-color);
 }
-
