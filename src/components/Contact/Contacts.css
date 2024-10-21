@@ -32,11 +32,7 @@
     background-color: var(--primary-light-color); /* Change the background color */
 }
 
-.h2 {
-    font-size: 48px;
-    font-weight: bold;
-    color: inherit;
-}
+
 
 .form-input {
     width: 100%;
@@ -45,6 +41,24 @@
     justify-content: space-between;
     border-radius: 2rem;
     border-color: transparent;
+}
+
+.contact-mail {
+    text-align: center;
+}
+
+.contact-mail-title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.contact-mail-title:hover {
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+    cursor: pointer;
 }
 
 .form-input-textarea {
